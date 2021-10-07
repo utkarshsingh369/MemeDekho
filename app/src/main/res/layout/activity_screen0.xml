@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@color/white"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="MemeDekho"
+            android:textColor="@color/main"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/main"
+            android:gravity="center"
+            android:text="SELECT CATEGORY"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:onClick="exitApp"
+                android:text="Exit"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/main"
+                app:layout_constraintBottom_toTopOf="@+id/buttonBollywood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="717dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/buttonGeneral"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:onClick="general"
+                    android:text="General"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonBollywood"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonBollywood"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Bollywood"
+                    android:onClick="bollywood"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonIndian"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonIndian"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Indian Dank"
+                    android:onClick="indianDank"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonAnime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonAnime"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="Anime"
+                    android:onClick="anime"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonMarvel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+
+                    android:id="@+id/buttonAnimal"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Animal"
+                    android:onClick="animal"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonGeneral"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/buttonMarvel"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Marvel"
+                    android:onClick="marvel"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonScience"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonScience"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Science"
+                    android:onClick="science"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonGaming"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonGaming"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="Gaming"
+                    android:onClick="gaming"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonPubg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonPubg"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:text="PUBG"
+                    android:onClick="pubg"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="580dp" />
+
+                <Button
+                    android:id="@+id/buttonCute"
+                    android:layout_width="300dp"
+                    android:layout_height="71dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="Cute Animals"
+                    android:onClick="cuteAnimals"
+                    android:backgroundTint="@color/nearlyWhite"
+                    android:textColor="@color/main"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/buttonPubg"
+                    app:layout_constraintBottom_toTopOf="@id/textViewAbout2"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="1231dp" />
+
+                <TextView
+                    android:id="@+id/textViewAbout2"
+                    android:layout_width="363dp"
+                    android:layout_height="322dp"
+                    android:layout_marginTop="200dp"
+                    android:background="#334756"
+                    android:padding="5dp"
+                    android:text="About:\n\nCreated By - Utkarsh Singh\nContact - utk0609@gmail.com\nversion - 1.0.0\n\n(Please provide feedback and help me to create a better app experience for you)\n:)"
+                    android:textColor="#07FB11"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonLog"
+                    android:layout_width="411dp"
+                    android:layout_height="71dp"
+                    android:layout_marginBottom="250dp"
+                    android:backgroundTint="#334756"
+                    android:onClick="showUpdate"
+                    android:text="Update Logs"
+                    android:textColor="#FF4C29"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/textViewAbout2"
+                    app:layout_constraintTop_toBottomOf="@id/buttonPubg"
+                    tools:layout_editor_absoluteX="56dp"
+                    tools:layout_editor_absoluteY="1231dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
